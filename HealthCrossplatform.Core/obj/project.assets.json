@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Acr.UserDialogs/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -9,6 +18,28 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "MvvmCross/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MvvmCross.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Json/6.1.2": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "6.1.2",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Json.dll": {}
         }
       },
       "NETStandard.Library/2.0.3": {
@@ -25,10 +56,49 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OxyPlot.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Acr.UserDialogs/7.0.1": {
+      "sha512": "+eGbTgwaFPzcaRnMdnAK5pHA0eoeoxkhy80FNwGeewqvA+DM6fUPM9yMbrN2hw3rcuBaXd2ghy2Xq5XU7m8qkw==",
+      "type": "package",
+      "path": "acr.userdialogs/7.0.1",
+      "files": [
+        "acr.userdialogs.7.0.1.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid70/Acr.UserDialogs.dll",
+        "lib/monoandroid80/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/ActionSheetContentDialog.xaml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/DatePickerControl.xaml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/LoginContentDialog.xaml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/ProgressContentDialog.xaml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Platforms/Uwp/TimePickerControl.xaml",
+        "lib/xamarinios10/Acr.UserDialogs.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -40,6 +110,48 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "MvvmCross/6.1.2": {
+      "sha512": "e0Tm2D+cGHSx0JwYcN2iqm+y9LKJiBO3zJHaKEdMRBVw8ypxNXmU/+HkOLUHVJpPw6/cv8GC9tKtpF9Nr7JkPQ==",
+      "type": "package",
+      "path": "mvvmcross/6.1.2",
+      "files": [
+        "lib/monoandroid81/MvvmCross.dll",
+        "lib/monoandroid81/MvvmCross.xml",
+        "lib/net461/MvvmCross.dll",
+        "lib/net461/MvvmCross.xml",
+        "lib/netcoreapp2.0/MvvmCross.dll",
+        "lib/netcoreapp2.0/MvvmCross.xml",
+        "lib/netstandard2.0/MvvmCross.dll",
+        "lib/netstandard2.0/MvvmCross.xml",
+        "lib/tizen40/MvvmCross.dll",
+        "lib/tizen40/MvvmCross.xml",
+        "lib/uap10.0.16299/MvvmCross.dll",
+        "lib/uap10.0.16299/MvvmCross.pri",
+        "lib/uap10.0.16299/MvvmCross.xml",
+        "lib/xamarinios10/MvvmCross.dll",
+        "lib/xamarinios10/MvvmCross.xml",
+        "lib/xamarinmac20/MvvmCross.dll",
+        "lib/xamarinmac20/MvvmCross.xml",
+        "lib/xamarintvos10/MvvmCross.dll",
+        "lib/xamarintvos10/MvvmCross.xml",
+        "lib/xamarinwatchos10/MvvmCross.dll",
+        "lib/xamarinwatchos10/MvvmCross.xml",
+        "mvvmcross.6.1.2.nupkg.sha512",
+        "mvvmcross.nuspec",
+        "readme.txt"
+      ]
+    },
+    "MvvmCross.Plugin.Json/6.1.2": {
+      "sha512": "my74ykkmXKJHfaG7T+fiHUDuzOC9yZZJCxFE78GR7EYs2ZNtu8Gm1stoA4Eiqvc7InhVQZFYsumSKqn8McFuIA==",
+      "type": "package",
+      "path": "mvvmcross.plugin.json/6.1.2",
+      "files": [
+        "lib/netstandard2.0/MvvmCross.Plugin.Json.dll",
+        "lib/netstandard2.0/MvvmCross.Plugin.Json.xml",
+        "mvvmcross.plugin.json.6.1.2.nupkg.sha512",
+        "mvvmcross.plugin.json.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -168,11 +280,72 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.2",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "OxyPlot.Core/1.0.0": {
+      "sha512": "4CdN5a7xg7rdXAn0MqofQQV7Y2mt0e8nch3Zko5XSien2eTZo+lkkX9IjMhipMiwu2/SQnggS3ZMzvhEThRnIw==",
+      "type": "package",
+      "path": "oxyplot.core/1.0.0",
+      "files": [
+        "AUTHORS",
+        "CHANGELOG.md",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "lib/net40-client/OxyPlot.XML",
+        "lib/net40-client/OxyPlot.dll",
+        "lib/net40-client/OxyPlot.pdb",
+        "lib/net40/OxyPlot.XML",
+        "lib/net40/OxyPlot.dll",
+        "lib/net40/OxyPlot.pdb",
+        "lib/net45/OxyPlot.dll",
+        "lib/net45/OxyPlot.pdb",
+        "lib/net45/OxyPlot.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.xml",
+        "lib/sl5/OxyPlot.XML",
+        "lib/sl5/OxyPlot.dll",
+        "lib/sl5/OxyPlot.pdb",
+        "oxyplot.core.1.0.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "Acr.UserDialogs >= 7.0.1",
+      "MvvmCross >= 6.1.2",
+      "MvvmCross.Plugin.Json >= 6.1.2",
+      "NETStandard.Library >= 2.0.3",
+      "OxyPlot.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -219,6 +392,22 @@
             "target": "Package",
             "version": "2.0.3",
             "autoReferenced": true
+          },
+          "MvvmCross": {
+            "target": "Package",
+            "version": "6.1.2"
+          },
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "7.0.1"
+          },
+          "MvvmCross.Plugin.Json": {
+            "target": "Package",
+            "version": "6.1.2"
+          },
+          "OxyPlot.Core": {
+            "target": "Package",
+            "version": "1.0.0"
           }
         },
         "imports": [
@@ -228,5 +417,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OxyPlot.Core 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "OxyPlot.Core",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

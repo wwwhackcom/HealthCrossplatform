@@ -1,10 +1,23 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{0ED99A30-34A1-4E5B-BF1A-58DD84A2FA57}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="HealthCrossplatform.Droid/Views/DashboardView.cs" Line="23" Column="15" />
+      <File FileName="HealthCrossplatform.Droid/Views/SaveProgressView.cs" Line="23" Column="9" />
+      <File FileName="HealthCrossplatform.Droid/Views/UserView.cs" Line="23" Column="70" />
+      <File FileName="HealthCrossplatform.Droid/Views/HomeView.cs" Line="39" Column="9" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/HomeViewModel.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="14" Column="120" />
+      <File FileName="HealthCrossplatform.Droid/Views/MenuView.cs" Line="73" Column="46" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/DashboardViewModel.cs" Line="18" Column="34" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/UserViewModel.cs" Line="32" Column="10" />
+      <File FileName="HealthCrossplatform.Droid/Resources/menu/nav_drawer.axml" Line="9" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HealthCrossplatform.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HealthCrossplatform.Core FirstBuild="True" />
 </Properties>
