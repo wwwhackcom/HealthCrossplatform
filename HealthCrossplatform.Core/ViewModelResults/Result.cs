@@ -1,7 +1,7 @@
 ﻿using System;
 namespace HealthCrossplatform.Core.ViewModelResults
 {
-    public class UserResult<TEntity>
+    public class Result<TEntity>
     {
         public TEntity Entity { get; set; }
 

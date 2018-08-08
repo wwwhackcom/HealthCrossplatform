@@ -15,24 +15,24 @@
             android:layout_height="wrap_content"
             android:textColor="@color/med_gray"
             android:textStyle="bold"
-            android:textSize="16dp"
+            android:textSize="12sp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
             android:layout_marginLeft="15dp"
-            local:layout_widthPercent="30%" />
+            local:layout_widthPercent="40%" />
         <TextView
             android:id="@+id/info"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            android:textSize="16dp"
+            android:textSize="11sp"
             android:layout_centerInParent="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="15dp"
-            local:layout_widthPercent="65%" />
+            local:layout_widthPercent="60%" />
     </android.support.percent.PercentRelativeLayout>
     <View
         android:id="@+id/line"

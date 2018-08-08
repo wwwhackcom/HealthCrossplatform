@@ -1,12 +1,13 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.Generic;
+using HealthCrossplatform.Core.Extensions;
+using HealthCrossplatform.Core.Models;
+using HealthCrossplatform.Core.Services.Interface;
+using HealthCrossplatform.Core.ViewModelResults;
+using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
-using MvvmCross.Commands;
-using HealthCrossplatform.Core.Services.Interface;
-using HealthCrossplatform.Core.Models;
-using HealthCrossplatform.Core.Extensions;
 
 namespace HealthCrossplatform.Core.ViewModels
 {
@@ -24,9 +25,9 @@ namespace HealthCrossplatform.Core.ViewModels
             _recipeService = recipeService;
             _navigationService = navigationService;
 
-            Recipes = new MvxObservableCollection<IRecipe>();
+            Recipes = new MvxObservableCollection<Recipe>();
 
-            RecipeSelectedCommand = new MvxAsyncCommand<IRecipe>(RecipeSelected);
+            RecipeSelectedCommand = new MvxAsyncCommand<Recipe>(RecipeSelected);
             FetchRecipeCommand = new MvxCommand(
                 () =>
             {
@@ -52,8 +53,8 @@ namespace HealthCrossplatform.Core.ViewModels
 
         public MvxNotifyTask FetchRecipesTask { get; private set; }
 
-        private MvxObservableCollection<IRecipe> _recipes;
-        public MvxObservableCollection<IRecipe> Recipes
+        private MvxObservableCollection<Recipe> _recipes;
+        public MvxObservableCollection<Recipe> Recipes
         {
             get
             {
@@ -67,7 +68,7 @@ namespace HealthCrossplatform.Core.ViewModels
         }
 
         // MVVM Commands
-        public IMvxCommand<IRecipe> RecipeSelectedCommand { get; private set; }
+        public IMvxCommand<Recipe> RecipeSelectedCommand { get; private set; }
 
         public IMvxCommand FetchRecipeCommand { get; private set; }
 
@@ -77,39 +78,25 @@ namespace HealthCrossplatform.Core.ViewModels
         private async Task LoadRecipes()
         {
             var result = await _recipeService.GetRecipesAsync(_nextPage);
-
-            List<IRecipe> recipesToAdd = new List<IRecipe>();
-            for (int i = 0; i < result.Results.Count(); i++)
-            {
-                if (i % 2 == 0)
-                {
-                    recipesToAdd.Add(result.Results.ElementAt(i).ToRecipe());
-                }
-                else
-                {
-                    recipesToAdd.Add(result.Results.ElementAt(i).ToRecipe2());
-                }
-            }
-
             if (string.IsNullOrEmpty(_nextPage))
             {
                 Recipes.Clear();
             }
-            Recipes.AddRange(recipesToAdd);
+            Recipes.AddRange(result.Results);
 
             _nextPage = result.Next;
         }
 
-        private async Task RecipeSelected(IRecipe selectedRecipe)
+        private async Task RecipeSelected(Recipe selectedRecipe)
         {
-            //var result = await _navigationService.Navigate<RecipeViewModel, IRecipe, UserResult<IRecipe>>(selectedRecipe);
+            var result = await _navigationService.Navigate<RecipeViewModel, Recipe, Result<Recipe>>(selectedRecipe);
 
-            //if (result != null && result.Responsed)
-            //{
-            //    var recipe = Recipes.FirstOrDefault(p => p.Name == result.Entity.Name);
-            //    if (recipe != null)
-            //        Recipes.Remove(recipe);
-            //}
+            if (result != null && result.Responsed)
+            {
+                var recipe = Recipes.FirstOrDefault(p => p.Name == result.Entity.Name);
+                if (recipe != null)
+                    Recipes.Remove(recipe);
+            }
         }
 
         private void RefreshRecipes()

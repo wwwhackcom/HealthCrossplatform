@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -166,8 +165,10 @@
     <Compile Include="Views\DashboardView.cs" />
     <Compile Include="Views\ProgressView.cs" />
     <Compile Include="Controls\InputView.cs" />
-    <Compile Include="TemplateSelectors\RecipesTemplateSelector.cs" />
     <Compile Include="Views\RecipesView.cs" />
+    <Compile Include="Views\RecipeView.cs" />
+    <Compile Include="TemplateSelectors\DashboardTemplateSelector.cs" />
+    <Compile Include="Views\SaveProgressView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -214,6 +215,15 @@
     <AndroidResource Include="Resources\drawable\dashboard.png" />
     <AndroidResource Include="Resources\layout\RecipesView.axml" />
     <AndroidResource Include="Resources\drawable\recipes.png" />
+    <AndroidResource Include="Resources\layout\RecipeView.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipe_header.png" />
+    <AndroidResource Include="Resources\layout\item_recipe.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipePic1.jpg" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipePic2.jpg" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipePic3.jpg" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipePic4.jpg" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipePic5.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\recipe.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

@@ -1,6 +1,6 @@
 ﻿namespace HealthCrossplatform.Core.Models
 {
-    public class Recipe : BaseRecipe
+    public class DashboardItem : BaseDashboardItem
     {
 
     }

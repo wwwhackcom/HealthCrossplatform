@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using HealthCrossplatform.Core.Models;
 using HealthCrossplatform.Core.Services.Interface;
+using HealthCrossplatform.Core.ViewModelResults;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
 
@@ -15,7 +16,7 @@ namespace HealthCrossplatform.Core.ViewModels
         {
             _navigationService = navigationService;
             _userService = userService;
-            AddProgressCommand = new MvxAsyncCommand(AddProgress);
+            SaveProgressCommand = new MvxAsyncCommand(SaveProgress);
         }
 
         public override void Prepare()
@@ -45,18 +46,18 @@ namespace HealthCrossplatform.Core.ViewModels
         }
 
         // MVVM Commands
-        public IMvxCommand AddProgressCommand { get; private set; }
+        public IMvxCommand SaveProgressCommand { get; private set; }
 
         // Private methods
 
-        private async Task AddProgress()
+        private async Task SaveProgress()
         {
-            //var result = await _navigationService.Navigate<AddRecordViewModel, User, UserResult<User>>(null);
+            var result = await _navigationService.Navigate<SaveProgressViewModel, User, Result<User>>(User);
 
-            //if (result != null && result.Responsed)
-            //{
-                
-            //}
+            if (result != null)
+            {
+                User = result.Entity;
+            }
         }
     }
 }

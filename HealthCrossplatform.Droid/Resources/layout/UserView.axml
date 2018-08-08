@@ -83,7 +83,7 @@
                     android:background="@color/colorAccent"
                     android:textColor="@android:color/white"
                     android:stateListAnimator="@null"
-                    local:MvxBind="Click AddProgressCommand; Text [AddProgress]" />
+                    local:MvxBind="Click SaveProgressCommand; Text [AddProgress]" />
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
     </android.support.design.widget.CoordinatorLayout>

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace HealthCrossplatform.Core.Models
+﻿namespace HealthCrossplatform.Core.Models
 {
-    public class BaseRecipe : IRecipe
+    public class Recipe
     {
         public string Name { get; set; }
         public string Category { get; set; }

@@ -1,10 +1,10 @@
 ﻿using System.Windows.Input;
+using HealthCrossplatform.Core.Resources;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
-using HealthCrossplatform.Core.Resources;
 
 namespace HealthCrossplatform.Core.ViewModels
 {

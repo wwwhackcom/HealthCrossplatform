@@ -1,25 +1,23 @@
-﻿using Acr.UserDialogs;
-using HealthCrossplatform.Core.Services.Interface;
+﻿using System.Threading.Tasks;
+using Acr.UserDialogs;
 using HealthCrossplatform.Core.Models;
-using HealthCrossplatform.Core.ViewModelResults;
-using MvvmCross.Navigation;
-using System.Threading.Tasks;
-using MvvmCross.Commands;
 using HealthCrossplatform.Core.MvxInteraction;
+using HealthCrossplatform.Core.Services.Interface;
+using HealthCrossplatform.Core.ViewModelResults;
+using MvvmCross.Commands;
+using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 
 namespace HealthCrossplatform.Core.ViewModels
 {
-    public class SaveProgressViewModel : BaseViewModel<User, UserResult<User>>
+    public class SaveProgressViewModel : BaseViewModel<User, Result<User>>
     {
         private readonly IMvxNavigationService _navigationService;
-        private readonly IUserService _userService;
         private readonly IUserDialogs _userDialogs;
 
-        public SaveProgressViewModel(IMvxNavigationService navigationService, IUserService userService, IUserDialogs userDialogs)
+        public SaveProgressViewModel(IMvxNavigationService navigationService, IUserDialogs userDialogs)
         {
             _navigationService = navigationService;
-            _userService = userService;
             _userDialogs = userDialogs;
 
             SaveProgressCommand = new MvxAsyncCommand(SaveProgress);
@@ -57,10 +55,9 @@ namespace HealthCrossplatform.Core.ViewModels
         public IMvxCommand SaveProgressCommand { get; private set; }
 
         // Private methods
-
         private async Task SaveProgress()
         {
-            var destroy = await _userDialogs.ConfirmAsync(new ConfirmConfig
+            var ok = await _userDialogs.ConfirmAsync(new ConfirmConfig
             {
                 Title = "Save a Progress",
                 Message = "Click yes to save this progress?",
@@ -68,21 +65,16 @@ namespace HealthCrossplatform.Core.ViewModels
                 CancelText = "No"
             });
 
-            if (!destroy)
+            if (!ok)
                 return;
 
-            var request = new UserAction
-            {
-                OnResponsed = () => _navigationService.Close(
-                    this,
-                    new UserResult<User>
-                    {
-                        Entity = User,
-                        Responsed = true
-                    })
-            };
 
-            Interaction.Raise(request);
+            await _navigationService.Close(this,
+                                           new Result<User>
+                                           {
+                                               Entity = User,
+                                               Responsed = true
+                                           });
         }
     }
 }

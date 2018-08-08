@@ -2,10 +2,10 @@
 using Android.Runtime;
 using Android.Support.V7.Widget;
 using Android.Views;
-using MvvmCross.Droid.Support.V7.RecyclerView;
-using HealthCrossplatform.Droid.Extensions;
 using HealthCrossplatform.Core.Resources;
 using HealthCrossplatform.Core.ViewModels;
+using HealthCrossplatform.Droid.Extensions;
+using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Platforms.Android.Presenters.Attributes;
 
 namespace HealthCrossplatform.Droid.Views
@@ -22,14 +22,14 @@ namespace HealthCrossplatform.Droid.Views
 
             ParentActivity.SupportActionBar.Title = Strings.Dashboard;
 
-            var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.recipes_recycler_view);
+            var recyclerView = view.FindViewById<MvxRecyclerView>(Resource.Id.items_recycler_view);
             if (recyclerView != null)
             {
                 recyclerView.HasFixedSize = true;
                 var layoutManager = new LinearLayoutManager(Activity);
                 recyclerView.SetLayoutManager(layoutManager);
 
-                recyclerView.AddOnScrollFetchItemsListener(layoutManager, () => ViewModel.FetchRecipesTask, () => ViewModel.FetchRecipeCommand);
+                recyclerView.AddOnScrollFetchItemsListener(layoutManager, () => ViewModel.FetchItemsTask, () => ViewModel.FetchItemsCommand);
             }
 
             return view;

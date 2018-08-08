@@ -1,25 +1,44 @@
 ﻿<Properties StartupConfiguration="{0ED99A30-34A1-4E5B-BF1A-58DD84A2FA57}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCrossplatform.Core/Services/Impl/RecipeService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCrossplatform.Core/ViewModels/SaveProgressViewModel.cs">
     <Files>
-      <File FileName="HealthCrossplatform.Droid/Views/UserView.cs" Line="57" Column="63" />
-      <File FileName="HealthCrossplatform.Core/Services/Impl/UserService.cs" Line="74" Column="33" />
-      <File FileName="HealthCrossplatform.Core/Models/User.cs" Line="18" Column="9" />
+      <File FileName="HealthCrossplatform.Droid/Views/UserView.cs" Line="56" Column="1" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/UserService.cs" Line="24" Column="54" />
+      <File FileName="HealthCrossplatform.Core/Models/User.cs" Line="18" Column="1" />
       <File FileName="HealthCrossplatform.Core/Models/UserInfo.cs" Line="14" Column="34" />
-      <File FileName="HealthCrossplatform.Core/Resources/Strings.resx" Line="164" Column="10" />
-      <File FileName="HealthCrossplatform.Core/Services/Impl/RecipeService.cs" Line="28" Column="54" />
-      <File FileName="HealthCrossplatform.Core/Models/Recipe/Recipe.cs" Line="3" Column="29" />
-      <File FileName="HealthCrossplatform.Core/Models/Recipe/BaseRecipe.cs" Line="8" Column="23" />
-      <File FileName="HealthCrossplatform.Core/Models/Recipe/IRecipe.cs" Line="19" Column="33" />
-      <File FileName="HealthCrossplatform.Core/Models/Recipe/Recipe2.cs" Line="1" Column="1" />
-      <File FileName="HealthCrossplatform.Core/Extensions/RecipeExtensions.cs" Line="21" Column="46" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/DashboardViewModel.cs" Line="1" Column="1" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/RecipesViewModel.cs" Line="79" Column="62" />
-      <File FileName="HealthCrossplatform.Droid/Views/RecipesView.cs" Line="25" Column="100" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/HomeViewModel.cs" Line="17" Column="130" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="28" Column="28" />
+      <File FileName="HealthCrossplatform.Core/Resources/Strings.resx" Line="174" Column="1" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/RecipeService.cs" Line="48" Column="42" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/DashboardViewModel.cs" Line="25" Column="43" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/RecipesViewModel.cs" Line="101" Column="9" />
+      <File FileName="HealthCrossplatform.Droid/Views/RecipesView.cs" Line="17" Column="69" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/HomeViewModel.cs" Line="1" Column="16" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="2" Column="18" />
       <File FileName="HealthCrossplatform.Droid/Views/MenuView.cs" Line="72" Column="35" />
       <File FileName="HealthCrossplatform.Droid/Resources/menu/nav_drawer.axml" Line="12" Column="35" />
-      <File FileName="HealthCrossplatform.Core/Services/Interface/IRecipeService.cs" Line="9" Column="39" />
+      <File FileName="HealthCrossplatform.Core/Services/Interface/IRecipeService.cs" Line="9" Column="32" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/RecipeViewModel.cs" Line="71" Column="38" />
+      <File FileName="HealthCrossplatform.Core/MvxInteraction/RecipeAction.cs" Line="4" Column="18" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/SaveProgressViewModel.cs" Line="72" Column="41" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/UserViewModel.cs" Line="61" Column="10" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/ProgressViewModel.cs" Line="2" Column="7" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/BaseViewModel.cs" Line="1" Column="19" />
+      <File FileName="HealthCrossplatform.Droid/Views/RecipeView.cs" Line="61" Column="63" />
+      <File FileName="HealthCrossplatform.Droid/Resources/values/colors.xml" Line="9" Column="25" />
+      <File FileName="HealthCrossplatform.Droid/Views/BaseFragment.cs" Line="37" Column="62" />
+      <File FileName="HealthCrossplatform.Droid/Views/DashboardView.cs" Line="25" Column="98" />
+      <File FileName="HealthCrossplatform.Droid/TemplateSelectors/DashboardTemplateSelector.cs" Line="8" Column="43" />
+      <File FileName="HealthCrossplatform.Droid/Controls/RecyclerViewOnScrollListener.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/Models/PagedResult.cs" Line="14" Column="31" />
+      <File FileName="HealthCrossplatform.Core/Models/DashboardItem/BaseDashboardItem.cs" Line="4" Column="52" />
+      <File FileName="HealthCrossplatform.Core/Models/DashboardItem/IDashboardItem.cs" Line="6" Column="36" />
+      <File FileName="HealthCrossplatform.Core/Models/DashboardItem/DashboardItem.cs" Line="3" Column="51" />
+      <File FileName="HealthCrossplatform.Core/Models/DashboardItem/DashboardItem2.cs" Line="5" Column="6" />
+      <File FileName="HealthCrossplatform.Core/Extensions/DashboardItemExtensions.cs" Line="20" Column="10" />
+      <File FileName="HealthCrossplatform.Core/Models/Recipe.cs" Line="5" Column="28" />
+      <File FileName="Source Not Available" />
+      <File FileName="HealthCrossplatform.Droid/Views/SaveProgressView.cs" Line="27" Column="9" />
+      <File FileName="HealthCrossplatform.Core/ViewModelResults/Result.cs" Line="6" Column="30" />
+      <File FileName="HealthCrossplatform.Droid/Controls/InputView.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/MvxInteraction/UserAction.cs" Line="4" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

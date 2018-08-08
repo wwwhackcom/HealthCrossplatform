@@ -136,5 +136,23 @@ namespace HealthCrossplatform.Core.Resources {
                 return ResourceManager.GetString("Recipes", resourceCulture);
             }
         }
+        
+        public static string Like {
+            get {
+                return ResourceManager.GetString("Like", resourceCulture);
+            }
+        }
+        
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        public static string saveProgress {
+            get {
+                return ResourceManager.GetString("saveProgress", resourceCulture);
+            }
+        }
     }
 }

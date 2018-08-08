@@ -6,6 +6,6 @@ namespace HealthCrossplatform.Core.Services.Interface
 {
     public interface IRecipeService
     {
-        Task<PagedResult<BaseRecipe>> GetRecipesAsync(string url = null);
+        Task<PagedResult<Recipe>> GetRecipesAsync(string url = null);
     }
 }

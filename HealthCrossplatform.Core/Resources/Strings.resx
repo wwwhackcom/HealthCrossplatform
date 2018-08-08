@@ -162,5 +162,14 @@
   <data name="Recipes" xml:space="preserve">
     <value>Recipes</value>
   </data>
-    
+  <data name="Like" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="saveProgress" xml:space="preserve">
+    <value>Save</value>
+  </data>
+
 </root>
