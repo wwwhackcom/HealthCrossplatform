@@ -14,6 +14,7 @@ namespace HealthCrossplatform.Core.ViewModels
             ShowDashboardCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<DashboardViewModel>());
             ShowUserCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<UserViewModel>());
             ShowProgressCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<ProgressViewModel>());
+            ShowRecipesCommand = new MvxAsyncCommand(async () => await _navigationService.Navigate<RecipesViewModel>());
         }
 
         // MvvmCross Lifecycle
@@ -24,6 +25,8 @@ namespace HealthCrossplatform.Core.ViewModels
         public IMvxCommand ShowDashboardCommand { get; private set; }
         public IMvxCommand ShowUserCommand { get; private set; }
         public IMvxCommand ShowProgressCommand { get; private set; }
+        public IMvxCommand ShowRecipesCommand { get; private set; }
+
         // Private methods
     }
 }

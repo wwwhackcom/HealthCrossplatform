@@ -49,31 +49,27 @@
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [Height]; Info Person.Height; Visibility Visibility(Person.Height)" />
+                    local:MvxBind="Label [Email]; Info User.Emailaddress; Visibility Visibility(User.Emailaddress)" />
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [Mass]; Info Person.Mass; Visibility Visibility(Person.Mass)" />
+                    local:MvxBind="Label [Height]; Info User.UserInfo.Height; Visibility Visibility(User.UserInfo.Height)" />
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [HairColor]; Info Person.HairColor; Visibility Visibility(Person.HairColor)" />
+                    local:MvxBind="Label [Weight]; Info User.UserInfo.InitialWeight; Visibility Visibility(User.UserInfo.InitialWeight)" />
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [SkinColor]; Info Person.SkinColor; Visibility Visibility(Person.SkinColor)" />
+                    local:MvxBind="Label [Waist]; Info User.UserInfo.InitialWaist; Visibility Visibility(User.UserInfo.InitialWaist)" />
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [EyeColor]; Info Person.EyeColor; Visibility Visibility(Person.EyeColor)" />
+                    local:MvxBind="Label [Birth]; Info User.UserInfo.DOB; Visibility Visibility(User.UserInfo.DOB)" />
                 <InfoView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    local:MvxBind="Label [BirthYear]; Info Person.BirthYear; Visibility Visibility(Person.BirthYear)" />
-                <InfoView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    local:MvxBind="Label [Gender]; Info Person.Gender; Visibility Visibility(Person.Gender)" />
+                    local:MvxBind="Label [Gender]; Info User.UserInfo.Gender; Visibility Visibility(User.UserInfo.Gender)" />
                 <Button
                     android:id="@+id/btn_response"
                     android:layout_width="match_parent"

@@ -38,6 +38,12 @@ namespace HealthCrossplatform.Droid.Views
 
             _previousMenuItem = iconDashboard;
 
+            var iconRecipes = _navigationView.Menu.FindItem(Resource.Id.nav_recipes);
+            iconRecipes.SetTitle(Strings.Recipes);
+            iconRecipes.SetCheckable(false);
+            iconRecipes.SetChecked(true);
+            iconRecipes.SetIcon(Resource.Drawable.recipes);
+
             var iconUser = _navigationView.Menu.FindItem(Resource.Id.nav_user);
             iconUser.SetTitle(Strings.UserProfile);
             iconUser.SetCheckable(false);
@@ -83,6 +89,9 @@ namespace HealthCrossplatform.Droid.Views
                     break;
                 case Resource.Id.nav_progress:
                     ViewModel.ShowProgressCommand.Execute(null);
+                    break;
+                case Resource.Id.nav_recipes:
+                    ViewModel.ShowRecipesCommand.Execute(null);
                     break;
             }
         }

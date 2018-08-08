@@ -167,6 +167,7 @@
     <Compile Include="Views\ProgressView.cs" />
     <Compile Include="Controls\InputView.cs" />
     <Compile Include="TemplateSelectors\RecipesTemplateSelector.cs" />
+    <Compile Include="Views\RecipesView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -211,6 +212,8 @@
     <AndroidResource Include="Resources\layout\SaveProgressView.axml" />
     <AndroidResource Include="Resources\layout\control_input_view.axml" />
     <AndroidResource Include="Resources\drawable\dashboard.png" />
+    <AndroidResource Include="Resources\layout\RecipesView.axml" />
+    <AndroidResource Include="Resources\drawable\recipes.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

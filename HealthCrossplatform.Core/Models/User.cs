@@ -15,5 +15,7 @@ namespace HealthCrossplatform.Core.Models
 
         public string Password { get; set; }
         public string lastlogin { get; set; }
+
+        public UserInfo UserInfo { get; set; }
     }
 }

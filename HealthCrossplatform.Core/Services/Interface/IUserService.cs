@@ -8,5 +8,7 @@ namespace HealthCrossplatform.Core.Services.Interface
         Task<PagedResult<User>> GetUsersAsync(string url = null);
 
         Task<User> GetUserAsync();
+
+        User GetLoginedUser();
     }
 }

@@ -1,28 +1,26 @@
 ﻿using System.Threading.Tasks;
-using Acr.UserDialogs;
 using HealthCrossplatform.Core.Models;
-using HealthCrossplatform.Core.MvxInteraction;
-using HealthCrossplatform.Core.ViewModelResults;
+using HealthCrossplatform.Core.Services.Interface;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
-using MvvmCross.ViewModels;
 
 namespace HealthCrossplatform.Core.ViewModels
 {
     public class UserViewModel : BaseViewModel
     {
         private readonly IMvxNavigationService _navigationService;
+        private readonly IUserService _userService;
 
-
-        public UserViewModel(IMvxNavigationService navigationService)
+        public UserViewModel(IMvxNavigationService navigationService, IUserService userService)
         {
             _navigationService = navigationService;
+            _userService = userService;
             AddProgressCommand = new MvxAsyncCommand(AddProgress);
         }
 
         public override void Prepare()
         {
-            
+            _user = _userService.GetLoginedUser();
         }
 
         // MvvmCross Lifecycle
@@ -32,6 +30,19 @@ namespace HealthCrossplatform.Core.ViewModels
         }
 
         // MVVM Properties
+        private User _user;
+        public User User
+        {
+            get
+            {
+                return _user;
+            }
+            set
+            {
+                _user = value;
+                RaisePropertyChanged(() => User);
+            }
+        }
 
         // MVVM Commands
         public IMvxCommand AddProgressCommand { get; private set; }

@@ -1,16 +1,25 @@
 ﻿<Properties StartupConfiguration="{0ED99A30-34A1-4E5B-BF1A-58DD84A2FA57}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCrossplatform.Core/Services/Impl/RecipeService.cs">
     <Files>
-      <File FileName="HealthCrossplatform.Droid/Views/DashboardView.cs" Line="23" Column="15" />
-      <File FileName="HealthCrossplatform.Droid/Views/SaveProgressView.cs" Line="23" Column="9" />
-      <File FileName="HealthCrossplatform.Droid/Views/UserView.cs" Line="23" Column="70" />
-      <File FileName="HealthCrossplatform.Droid/Views/HomeView.cs" Line="39" Column="9" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/HomeViewModel.cs" Line="1" Column="1" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="14" Column="120" />
-      <File FileName="HealthCrossplatform.Droid/Views/MenuView.cs" Line="73" Column="46" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/DashboardViewModel.cs" Line="18" Column="34" />
-      <File FileName="HealthCrossplatform.Core/ViewModels/UserViewModel.cs" Line="32" Column="10" />
-      <File FileName="HealthCrossplatform.Droid/Resources/menu/nav_drawer.axml" Line="9" Column="37" />
+      <File FileName="HealthCrossplatform.Droid/Views/UserView.cs" Line="57" Column="63" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/UserService.cs" Line="74" Column="33" />
+      <File FileName="HealthCrossplatform.Core/Models/User.cs" Line="18" Column="9" />
+      <File FileName="HealthCrossplatform.Core/Models/UserInfo.cs" Line="14" Column="34" />
+      <File FileName="HealthCrossplatform.Core/Resources/Strings.resx" Line="164" Column="10" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/RecipeService.cs" Line="28" Column="54" />
+      <File FileName="HealthCrossplatform.Core/Models/Recipe/Recipe.cs" Line="3" Column="29" />
+      <File FileName="HealthCrossplatform.Core/Models/Recipe/BaseRecipe.cs" Line="8" Column="23" />
+      <File FileName="HealthCrossplatform.Core/Models/Recipe/IRecipe.cs" Line="19" Column="33" />
+      <File FileName="HealthCrossplatform.Core/Models/Recipe/Recipe2.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/Extensions/RecipeExtensions.cs" Line="21" Column="46" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/DashboardViewModel.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/RecipesViewModel.cs" Line="79" Column="62" />
+      <File FileName="HealthCrossplatform.Droid/Views/RecipesView.cs" Line="25" Column="100" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/HomeViewModel.cs" Line="17" Column="130" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="28" Column="28" />
+      <File FileName="HealthCrossplatform.Droid/Views/MenuView.cs" Line="72" Column="35" />
+      <File FileName="HealthCrossplatform.Droid/Resources/menu/nav_drawer.axml" Line="12" Column="35" />
+      <File FileName="HealthCrossplatform.Core/Services/Interface/IRecipeService.cs" Line="9" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

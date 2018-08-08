@@ -30,6 +30,11 @@ namespace HealthCrossplatform.Core.Services.Impl
             return Task.FromResult(GetMockedUser());
         }
 
+        public User GetLoginedUser()
+        {
+            return GetMockedUser();
+        }
+
         private PagedResult<User> GetMockedUsers()
         {
             return new PagedResult<User>()
@@ -41,21 +46,21 @@ namespace HealthCrossplatform.Core.Services.Impl
                 {
                     new User
                     {
-                        Username = "Yoda",
-                        Emailaddress = "Master@wwwhackcom.net",
-                        Firstname = "Yoda"
+                        Username = "Nick",
+                        Emailaddress = "nick@wwwhackcom.net",
+                        Firstname = "Nick"
                     },
                     new User
                     {
-                        Username = "Kenobi",
-                        Emailaddress = "Kenobi@wwwhackcom.net",
-                        Firstname = "Kenobi"
+                        Username = "W",
+                        Emailaddress = "W@wwwhackcom.net",
+                        Firstname = "W"
                     },
                     new User
                     {
-                        Username = "Windu",
-                        Emailaddress = "Kenobi@wwwhackcom.net",
-                        Firstname = "Windu"
+                        Username = "T",
+                        Emailaddress = "T@wwwhackcom.net",
+                        Firstname = "T"
                     }
                 }
             };
@@ -65,10 +70,17 @@ namespace HealthCrossplatform.Core.Services.Impl
         {
             return new User 
             {
-                Username = "Yoda",
-                Emailaddress = "Master@wwwhackcom.net",
-                Firstname = "Yoda"
-            };
+                Username = "Nick",
+                Emailaddress = "@wwwhackcom.net",
+                Firstname = "Nick",
+                UserInfo = new UserInfo {
+                    Height = 175.0f,
+                    InitialWeight = 160.0f,
+                    InitialWaist = 120.0f,
+                    DOB = "01/01",
+                    Gender = "Male"
+                }
+             };
         }
     }
 }

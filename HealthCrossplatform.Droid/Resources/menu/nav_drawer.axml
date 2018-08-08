@@ -7,6 +7,9 @@
         <item
             android:id="@+id/nav_dashboard"
             android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_recipes"
+            android:title="Recipes" />
 		<item
 			android:id="@+id/nav_user"
 			android:title="User Profile" />

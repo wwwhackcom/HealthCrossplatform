@@ -54,7 +54,7 @@ namespace HealthCrossplatform.Droid.Views
 
             _toolbar.SetTitleTextColor(AppColors.AccentColor.ToNativeColor());
 
-            this.AddBindings(_toolbar, "Title Person.Name");
+            this.AddBindings(_toolbar, "Title User.Username");
             this.AddBindings(this, "Interaction Interaction");
 
             return view;

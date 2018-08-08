@@ -9,20 +9,17 @@ namespace HealthCrossplatform.Core.Extensions
         {
             return new Recipe
             {
-                Climate = baseRecipe.Climate,
-                Created = baseRecipe.Created,
-                Diameter = baseRecipe.Diameter,
-                Edited = baseRecipe.Edited,
-                Films = baseRecipe.Films,
-                Gravity = baseRecipe.Gravity,
                 Name = baseRecipe.Name,
-                OrbitalPeriod = baseRecipe.OrbitalPeriod,
-                Population = baseRecipe.Population,
-                Residents = baseRecipe.Residents,
-                RotationPeriod = baseRecipe.RotationPeriod,
-                SurfaceWater = baseRecipe.SurfaceWater,
-                Terrain = baseRecipe.Terrain,
-                Url = baseRecipe.Url
+                Category = baseRecipe.Category,
+                Description = baseRecipe.Description,
+                Level = baseRecipe.Level,
+                Nutrition = baseRecipe.Nutrition,
+                Preptime = baseRecipe.Preptime,
+                Cooktime = baseRecipe.Cooktime,
+                Ingredients = baseRecipe.Ingredients,
+                Methods = baseRecipe.Methods,
+                Created = baseRecipe.Created,
+                Edited = baseRecipe.Edited
             };
         }
 
@@ -30,20 +27,17 @@ namespace HealthCrossplatform.Core.Extensions
         {
             return new Recipe2
             {
-                Climate = baseRecipe.Climate,
-                Created = baseRecipe.Created,
-                Diameter = baseRecipe.Diameter,
-                Edited = baseRecipe.Edited,
-                Films = baseRecipe.Films,
-                Gravity = baseRecipe.Gravity,
                 Name = baseRecipe.Name,
-                OrbitalPeriod = baseRecipe.OrbitalPeriod,
-                Population = baseRecipe.Population,
-                Residents = baseRecipe.Residents,
-                RotationPeriod = baseRecipe.RotationPeriod,
-                SurfaceWater = baseRecipe.SurfaceWater,
-                Terrain = baseRecipe.Terrain,
-                Url = baseRecipe.Url
+                Category = baseRecipe.Category,
+                Description = baseRecipe.Description,
+                Level = baseRecipe.Level,
+                Nutrition = baseRecipe.Nutrition,
+                Preptime = baseRecipe.Preptime,
+                Cooktime = baseRecipe.Cooktime,
+                Ingredients = baseRecipe.Ingredients,
+                Methods = baseRecipe.Methods,
+                Created = baseRecipe.Created,
+                Edited = baseRecipe.Edited
             };
         }
     }

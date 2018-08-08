@@ -126,11 +126,11 @@
   <data name="Date" xml:space="preserve">
     <value>Date</value> 
   </data>
-  <data name="AnotherOption" xml:space="preserve">
-    <value>Another option</value> 
-  </data>
   <data name="Menu" xml:space="preserve"> 
     <value>Menu</value> 
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value> 
   </data>
   <data name="Height" xml:space="preserve">
     <value>Height</value> 
@@ -138,29 +138,14 @@
   <data name="Weight" xml:space="preserve">
     <value>Weight</value> 
   </data>
-  <data name="Mass" xml:space="preserve">
-    <value>Mass</value> 
+  <data name="Waist" xml:space="preserve">
+    <value>Waist</value> 
   </data>
-  <data name="HairColor" xml:space="preserve">
-    <value>Hair color</value> 
-  </data>
-  <data name="SkinColor" xml:space="preserve">
-    <value>Skin color</value> 
-  </data>
-  <data name="EyeColor" xml:space="preserve">
-    <value>Eye color</value> 
-  </data>
-  <data name="BirthYear" xml:space="preserve">
-    <value>Birth year</value> 
+  <data name="Birth" xml:space="preserve">
+    <value>Birth</value> 
   </data>
   <data name="Gender" xml:space="preserve">
     <value>Gender</value>   
-  </data>
-  <data name="HomeWorld" xml:space="preserve">
-    <value>Home world</value> 
-  </data>
-  <data name="Example" xml:space="preserve">
-    <value>Example is this right?</value>
   </data>
   <data name="UserProfile" xml:space="preserve">
     <value>User Profile</value>
@@ -173,6 +158,9 @@
   </data>
   <data name="Progress" xml:space="preserve">
     <value>Progress</value>
+  </data>
+  <data name="Recipes" xml:space="preserve">
+    <value>Recipes</value>
   </data>
     
 </root>

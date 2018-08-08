@@ -65,15 +65,15 @@ namespace HealthCrossplatform.Core.Resources {
             }
         }
         
-        public static string AnotherOption {
-            get {
-                return ResourceManager.GetString("AnotherOption", resourceCulture);
-            }
-        }
-        
         public static string Menu {
             get {
                 return ResourceManager.GetString("Menu", resourceCulture);
+            }
+        }
+        
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
@@ -89,51 +89,21 @@ namespace HealthCrossplatform.Core.Resources {
             }
         }
         
-        public static string Mass {
+        public static string Waist {
             get {
-                return ResourceManager.GetString("Mass", resourceCulture);
+                return ResourceManager.GetString("Waist", resourceCulture);
             }
         }
         
-        public static string HairColor {
+        public static string Birth {
             get {
-                return ResourceManager.GetString("HairColor", resourceCulture);
-            }
-        }
-        
-        public static string SkinColor {
-            get {
-                return ResourceManager.GetString("SkinColor", resourceCulture);
-            }
-        }
-        
-        public static string EyeColor {
-            get {
-                return ResourceManager.GetString("EyeColor", resourceCulture);
-            }
-        }
-        
-        public static string BirthYear {
-            get {
-                return ResourceManager.GetString("BirthYear", resourceCulture);
+                return ResourceManager.GetString("Birth", resourceCulture);
             }
         }
         
         public static string Gender {
             get {
                 return ResourceManager.GetString("Gender", resourceCulture);
-            }
-        }
-        
-        public static string HomeWorld {
-            get {
-                return ResourceManager.GetString("HomeWorld", resourceCulture);
-            }
-        }
-        
-        public static string Example {
-            get {
-                return ResourceManager.GetString("Example", resourceCulture);
             }
         }
         
@@ -158,6 +128,12 @@ namespace HealthCrossplatform.Core.Resources {
         public static string Progress {
             get {
                 return ResourceManager.GetString("Progress", resourceCulture);
+            }
+        }
+        
+        public static string Recipes {
+            get {
+                return ResourceManager.GetString("Recipes", resourceCulture);
             }
         }
     }

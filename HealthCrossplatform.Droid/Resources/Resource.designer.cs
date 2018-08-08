@@ -6566,26 +6566,26 @@ namespace HealthCrossplatform.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020076
-			public const int avd_hide_password_1 = 2130837622;
-			
 			// aapt resource value: 0x7f020077
-			public const int avd_hide_password_2 = 2130837623;
+			public const int avd_hide_password_1 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int avd_hide_password_3 = 2130837624;
+			public const int avd_hide_password_2 = 2130837624;
+			
+			// aapt resource value: 0x7f020079
+			public const int avd_hide_password_3 = 2130837625;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020079
-			public const int avd_show_password_1 = 2130837625;
-			
 			// aapt resource value: 0x7f02007a
-			public const int avd_show_password_2 = 2130837626;
+			public const int avd_show_password_1 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int avd_show_password_3 = 2130837627;
+			public const int avd_show_password_2 = 2130837627;
+			
+			// aapt resource value: 0x7f02007c
+			public const int avd_show_password_3 = 2130837628;
 			
 			// aapt resource value: 0x7f020055
 			public const int Background = 2130837589;
@@ -6647,11 +6647,11 @@ namespace HealthCrossplatform.Droid
 			// aapt resource value: 0x7f020068
 			public const int notification_icon_background = 2130837608;
 			
-			// aapt resource value: 0x7f020074
-			public const int notification_template_icon_bg = 2130837620;
-			
 			// aapt resource value: 0x7f020075
-			public const int notification_template_icon_low_bg = 2130837621;
+			public const int notification_template_icon_bg = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int notification_template_icon_low_bg = 2130837622;
 			
 			// aapt resource value: 0x7f020069
 			public const int notification_tile_bg = 2130837609;
@@ -6666,25 +6666,28 @@ namespace HealthCrossplatform.Droid
 			public const int progress = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int roundedbg = 2130837613;
+			public const int recipes = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int roundedbgdark = 2130837614;
+			public const int roundedbg = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int screen = 2130837615;
+			public const int roundedbgdark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int tooltip_frame_dark = 2130837616;
+			public const int screen = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int tooltip_frame_light = 2130837617;
+			public const int tooltip_frame_dark = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int user = 2130837618;
+			public const int tooltip_frame_light = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int user_header = 2130837619;
+			public const int user = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int user_header = 2130837620;
 			
 			static Drawable()
 			{
@@ -7032,11 +7035,14 @@ namespace HealthCrossplatform.Droid
 			// aapt resource value: 0x7f0900d5
 			public const int nav_items = 2131296469;
 			
-			// aapt resource value: 0x7f0900d8
-			public const int nav_progress = 2131296472;
+			// aapt resource value: 0x7f0900d9
+			public const int nav_progress = 2131296473;
 			
 			// aapt resource value: 0x7f0900d7
-			public const int nav_user = 2131296471;
+			public const int nav_recipes = 2131296471;
+			
+			// aapt resource value: 0x7f0900d8
+			public const int nav_user = 2131296472;
 			
 			// aapt resource value: 0x7f0900af
 			public const int nav_view = 2131296431;
@@ -7608,31 +7614,34 @@ namespace HealthCrossplatform.Droid
 			public const int ProgressView = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int SaveProgressView = 2130968643;
+			public const int RecipesView = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int select_dialog_item_material = 2130968644;
+			public const int SaveProgressView = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int select_dialog_multichoice_material = 2130968645;
+			public const int select_dialog_item_material = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int select_dialog_singlechoice_material = 2130968646;
+			public const int select_dialog_multichoice_material = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int SplashScreen = 2130968647;
+			public const int select_dialog_singlechoice_material = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int support_simple_spinner_dropdown_item = 2130968648;
+			public const int SplashScreen = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int toolbar_actionbar = 2130968649;
+			public const int support_simple_spinner_dropdown_item = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int tooltip = 2130968650;
+			public const int toolbar_actionbar = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int UserView = 2130968651;
+			public const int tooltip = 2130968651;
+			
+			// aapt resource value: 0x7f04004c
+			public const int UserView = 2130968652;
 			
 			static Layout()
 			{
