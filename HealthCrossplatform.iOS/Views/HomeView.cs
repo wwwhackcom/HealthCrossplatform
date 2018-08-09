@@ -26,10 +26,10 @@ namespace HealthCrossplatform.iOS.Views
             if (_firstTimePresented)
             {
                 _firstTimePresented = false;
-                //ViewModel.ShowDashboardViewModelCommand.Execute(null);
+                ViewModel.ShowDashboardViewModelCommand.Execute(null);
+                ViewModel.ShowRecipesViewModelCommand.Execute(null);
+                ViewModel.ShowUserViewModelCommand.Execute(null);
                 ViewModel.ShowMenuViewModelCommand.Execute(null);
-                //ViewModel.ShowUserViewModelCommand.Execute(null);
-                //ViewModel.ShowRecipesViewModelCommand.Execute(null);
             }
         }
     }

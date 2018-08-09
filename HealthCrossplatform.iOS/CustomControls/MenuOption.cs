@@ -6,9 +6,9 @@ namespace HealthCrossplatform.iOS.CustomControls
     public class MenuOption : BaseView
     {
         private const float PADDING = 16f;
-        private const float IMAGE_SIZE = 22f;
+        private const float IMAGE_SIZE = 24f;
 
-        public UIImageView Image { get; set; }
+        public UIImageView ImageView { get; set; }
 
         public UILabel Label { get; set; }
 
@@ -22,17 +22,17 @@ namespace HealthCrossplatform.iOS.CustomControls
         {
             base.CreateViews();
 
-            Image = new UIImageView();
+            ImageView = new UIImageView();
 
             Label = new UILabel
             {
-                TextColor = UIColor.Red,
-                Font = UIFont.SystemFontOfSize(15f, UIFontWeight.Bold)
+                TextColor = UIColor.White,
+                Font = UIFont.SystemFontOfSize(18f, UIFontWeight.Bold)
             };
 
             Line = new UIView { BackgroundColor = UIColor.LightGray };
 
-            AddSubviews(Image, Label, Line);
+            AddSubviews(ImageView, Label, Line);
             this.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
         }
 
@@ -41,12 +41,12 @@ namespace HealthCrossplatform.iOS.CustomControls
             base.CreateConstraints();
 
             this.AddConstraints(
-                Image.AtLeftOf(this, PADDING),
-                Image.WithSameCenterY(this),
-                Image.Width().EqualTo(IMAGE_SIZE),
-                Image.Height().EqualTo(IMAGE_SIZE),
+                ImageView.AtLeftOf(this, PADDING),
+                ImageView.WithSameCenterY(this),
+                ImageView.Width().EqualTo(IMAGE_SIZE),
+                ImageView.Height().EqualTo(IMAGE_SIZE),
 
-                Label.ToRightOf(Image, PADDING / 2),
+                Label.ToRightOf(ImageView, PADDING / 2),
                 Label.AtTopOf(this, PADDING),
                 Label.AtRightOf(this, PADDING),
 

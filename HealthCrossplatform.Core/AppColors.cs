@@ -9,5 +9,7 @@ namespace HealthCrossplatform.Core
         public static MvxColor DarkPrimaryColor = MvxColors.Black;
 
         public static MvxColor AccentColor = new MvxColor(193, 39, 44); // #C1272C
+
+        public static MvxColor DarkColor = new MvxColor(66, 66, 66);
     }
 }

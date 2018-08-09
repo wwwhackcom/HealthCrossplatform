@@ -164,6 +164,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Views\" />
     <Folder Include="CustomControls\" />
+    <Folder Include="Sources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -184,6 +185,17 @@
     <Compile Include="MvxBindings\NetworkIndicatorTargetBinding.cs" />
     <Compile Include="Views\UserView.cs" />
     <Compile Include="Extensions\UIViewExtensions.cs" />
+    <Compile Include="Views\RecipesView.cs" />
+    <Compile Include="Views\RecipeView.cs" />
+    <Compile Include="Sources\DashboardTableViewSource.cs" />
+    <Compile Include="Views\Cells\BaseTableViewCell.cs" />
+    <Compile Include="Views\Cells\DashboadCell\NameTableViewCell.cs" />
+    <Compile Include="Views\Cells\DashboadCell\WhiteNameTableViewCell.cs" />
+    <Compile Include="Views\Cells\RecipeCell\RecipeTableViewCell.cs" />
+    <Compile Include="Views\DashboardView.cs" />
+    <Compile Include="Views\ProgressView.cs" />
+    <Compile Include="Views\SaveProgressView.cs" />
+    <Compile Include="CustomControls\InputView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HealthCrossplatform.Core\HealthCrossplatform.Core.csproj">

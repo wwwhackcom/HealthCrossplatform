@@ -23,7 +23,7 @@ namespace HealthCrossplatform.iOS.Views
         private UIImageView _imgHeaderBackground, _imgHeaderProfile;
         private UILabel _lblHeaderName;
 
-        private MenuOption _optionDashboard, _optionRecipes, _optionUser, _optionProgress;
+        private MenuOption _optionProgress, _optionAddProgress;
 
         public MenuView()
         {
@@ -67,26 +67,18 @@ namespace HealthCrossplatform.iOS.Views
                 Text = "Nick W"
             };
 
-            _optionDashboard = new MenuOption();
-            _optionDashboard.Image.Image = UIImage.FromBundle("ic_dashboard");
-            _optionDashboard.Label.Text = Strings.Dashboard;
-            _optionRecipes = new MenuOption();
-            _optionRecipes.Image.Image = UIImage.FromBundle("ic_recipes");
-            _optionRecipes.Label.Text = Strings.Recipes;
-            _optionUser = new MenuOption();
-            _optionUser.Image.Image = UIImage.FromBundle("ic_user");
-            _optionUser.Label.Text = Strings.UserProfile;
             _optionProgress = new MenuOption();
-            _optionProgress.Image.Image = UIImage.FromBundle("ic_progress");
+            _optionProgress.ImageView.Image = UIImage.FromBundle("ic_progress");
             _optionProgress.Label.Text = Strings.Progress;
+            _optionAddProgress = new MenuOption();
+            _optionAddProgress.ImageView.Image = UIImage.FromBundle("ic_user");
+            _optionAddProgress.Label.Text = Strings.AddProgress;
 
             View.AddSubviews(_imgBackground, _lineHeaderTop, _imgHeaderBackground, _lineHeaderBottom, _imgHeaderProfile, _lblHeaderName, _options);
             View.SubviewsDoNotTranslateAutoresizingMaskIntoConstraints();
 
-            _options.AddArrangedSubview(_optionDashboard);
-            _options.AddArrangedSubview(_optionRecipes);
-            _options.AddArrangedSubview(_optionUser);
             _options.AddArrangedSubview(_optionProgress);
+            _options.AddArrangedSubview(_optionAddProgress);
 
             View.AddConstraints(
                 _imgBackground.AtLeftOf(View),
@@ -123,10 +115,8 @@ namespace HealthCrossplatform.iOS.Views
             );
 
             var set = this.CreateBindingSet<MenuView, MenuViewModel>();
-            //set.Bind(_optionDashboard.Tap()).For(g => g.Command).To(vm => vm.ShowDashboardCommand);
-            //set.Bind(_optionRecipes.Tap()).For(g => g.Command).To(vm => vm.ShowRecipesCommand);
-            set.Bind(_optionUser.Tap()).For(g => g.Command).To(vm => vm.ShowUserCommand);
-            //set.Bind(_optionProgress.Tap()).For(g => g.Command).To(vm => vm.ShowProgressCommand);
+            set.Bind(_optionProgress.Tap()).For(g => g.Command).To(vm => vm.ShowProgressCommand);
+            set.Bind(_optionAddProgress.Tap()).For(g => g.Command).To(vm => vm.SaveProgressCommand);
             set.Apply();
         }
     }

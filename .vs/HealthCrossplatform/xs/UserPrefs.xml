@@ -1,7 +1,29 @@
-﻿<Properties StartupConfiguration="{B6E6994F-9168-4B1C-BD56-D29CDD929953}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCrossplatform.iOS/Views/MenuView.cs">
+﻿<Properties StartupConfiguration="{0ED99A30-34A1-4E5B-BF1A-58DD84A2FA57}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCrossplatform.Core/Services/Impl/RecipeService.cs">
     <Files>
-      <File FileName="HealthCrossplatform.iOS/Views/MenuView.cs" Line="72" Column="60" />
+      <File FileName="HealthCrossplatform.iOS/Views/Cells/RecipeCell/RecipeTableViewCell.cs" Line="53" Column="15" />
+      <File FileName="HealthCrossplatform.iOS/Views/UserView.cs" Line="54" Column="41" />
+      <File FileName="HealthCrossplatform.iOS/Views/RecipeView.cs" Line="19" Column="2" />
+      <File FileName="HealthCrossplatform.Droid/Views/RecipeView.cs" Line="30" Column="51" />
+      <File FileName="HealthCrossplatform.Droid/Views/RecipesView.cs" Line="23" Column="60" />
+      <File FileName="HealthCrossplatform.iOS/CustomControls/InfoView.cs" Line="29" Column="27" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/RecipeViewModel.cs" Line="21" Column="65" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/RecipesViewModel.cs" Line="73" Column="39" />
+      <File FileName="HealthCrossplatform.iOS/Views/RecipesView.cs" Line="23" Column="44" />
+      <File FileName="HealthCrossplatform.iOS/AppDelegate.cs" Line="36" Column="28" />
+      <File FileName="HealthCrossplatform.iOS/Main.cs" Line="12" Column="1" />
+      <File FileName="HealthCrossplatform.iOS/Views/MenuView.cs" Line="119" Column="87" />
+      <File FileName="HealthCrossplatform.iOS/Views/ProgressView.cs" Line="16" Column="6" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/ProgressViewModel.cs" Line="19" Column="25" />
+      <File FileName="HealthCrossplatform.iOS/Views/HomeView.cs" Line="29" Column="17" />
+      <File FileName="HealthCrossplatform.iOS/Views/SaveProgressView.cs" Line="19" Column="2" />
+      <File FileName="HealthCrossplatform.iOS/CustomControls/InputView.cs" Line="60" Column="17" />
+      <File FileName="HealthCrossplatform.Droid/Views/SaveProgressView.cs" Line="23" Column="75" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/UserViewModel.cs" Line="55" Column="32" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/SaveProgressViewModel.cs" Line="56" Column="31" />
+      <File FileName="HealthCrossplatform.Core/ViewModels/MenuViewModel.cs" Line="3" Column="24" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/UserService.cs" Line="1" Column="1" />
+      <File FileName="HealthCrossplatform.Core/Services/Impl/RecipeService.cs" Line="17" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -9,9 +31,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HealthCrossplatform.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.HealthCrossplatform.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.185EFD68-7232-45DA-8D19-847AB3240631" />
-  <DisabledProjects>
-    <String>HealthCrossplatform.Droid/HealthCrossplatform.Droid.csproj</String>
-  </DisabledProjects>
 </Properties>

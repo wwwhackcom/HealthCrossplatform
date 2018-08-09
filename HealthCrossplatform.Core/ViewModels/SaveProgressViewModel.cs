@@ -13,11 +13,13 @@ namespace HealthCrossplatform.Core.ViewModels
     public class SaveProgressViewModel : BaseViewModel<User, Result<User>>
     {
         private readonly IMvxNavigationService _navigationService;
+        private readonly IUserService _userService;
         private readonly IUserDialogs _userDialogs;
 
-        public SaveProgressViewModel(IMvxNavigationService navigationService, IUserDialogs userDialogs)
+        public SaveProgressViewModel(IMvxNavigationService navigationService, IUserService userService, IUserDialogs userDialogs)
         {
             _navigationService = navigationService;
+            _userService = userService;
             _userDialogs = userDialogs;
 
             SaveProgressCommand = new MvxAsyncCommand(SaveProgress);
@@ -25,7 +27,14 @@ namespace HealthCrossplatform.Core.ViewModels
 
         public override void Prepare(User parameter)
         {
-            User = parameter;
+            if (parameter != null)
+            {
+                _user = parameter;
+            }
+            else
+            {
+                _user = _userService.GetLoginedUser();
+            }
         }
 
         // MvvmCross Lifecycle
@@ -72,7 +81,7 @@ namespace HealthCrossplatform.Core.ViewModels
             await _navigationService.Close(this,
                                            new Result<User>
                                            {
-                                               Entity = User,
+                                               Entity = _user,
                                                Responsed = true
                                            });
         }
